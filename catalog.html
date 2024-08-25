@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog</title>
+    <link rel="icon" href="images/logo.jpg" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <section class="top-catalog center">
+      <header class="header">
+        <section class="logo">
+          <p>Интерьер.</p>
+        </section>
+        <form class="form">
+          <input class="form__input" type="text" placeholder="Поиск" />
+        </form>
+        <nav class="menu">
+          <ul>
+            <li><a class="menu__link" href="catalog.html">Каталог</a></li>
+            <li><a class="menu__link" href="basket.html">Корзина</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h1 class="heading">Каталог</h1>
+    </section>
+    <section class="center">
+      <section class="catalog-info">
+        <section class="catalog-info__path">
+          <div>
+            <a class="catalog-info__path_link" href="index.html">Главная</a>
+          </div>
+          /
+          <div>
+            <a class="catalog-info__path_link" href="catalog.html"
+              >Каталог товаров</a
+            >
+          </div>
+        </section>
+        <section class="catalog-info__selectors">
+          <section class="catalog-info__filtration">
+            <select class="catalog-info__filtration_selector">
+              <option>Фильтрация</option>
+            </select>
+
+            <form action="#" method="get">
+              <section class="catalog-info__filtration_on">
+                <div class="catalog-info__filtration_on_all">
+                  <div class="catalog-info__filtration_on_1">
+                    <p class="title">Срок доставки</p>
+                    <div class="catalog-info__filtration_on_delivery-date">
+                      <input
+                        type="radio"
+                        id="no-matter"
+                        name="delivery"
+                      /><label for="no-matter">Неважно</label>
+                      <input type="radio" id="today" name="delivery" /><label
+                        for="today"
+                        >Сегодня</label
+                      >
+                      <input type="radio" id="tomorrow" name="delivery" /><label
+                        for="tomorrow"
+                        >Завтра</label
+                      >
+                      <input
+                        type="radio"
+                        id="in-three-days"
+                        name="delivery"
+                      /><label for="in-three-days">До 3 дней</label>
+                      <input
+                        type="radio"
+                        id="in-seven-days"
+                        name="delivery"
+                      /><label for="in-seven-days">До 7 дней</label>
+                    </div>
+                    <div class="catalog-info__filtration_on_price">
+                      <p class="title">Цена</p>
+                      <div class="catalog-info__filtration_on_price_range">
+                        <p class="catalog-info__filtration_on_price_from-zero">
+                          От 0 руб.
+                        </p>
+                        <p
+                          class="catalog-info__filtration_on_price_to-hudred-thousand"
+                        >
+                          До 100000 руб.
+                        </p>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="first-circle"></div>
+                        <div class="last-circle"></div>
+                      </div>
+                    </div>
+                    <p class="title">Цвет</p>
+                    <div class="catalog-info__filtration_on_color">
+                      <input type="checkbox" id="white" name="white" /><label
+                        for="white"
+                      ></label>
+                      <input
+                        checked
+                        type="checkbox"
+                        id="black"
+                        name="black"
+                      /><label for="black"></label>
+                      <input type="checkbox" id="gray" name="gray" /><label
+                        for="gray"
+                      ></label>
+                      <input type="checkbox" id="red" name="red" />
+                      <label for="red"></label>
+                      <input type="checkbox" id="orange" name="orange" /><label
+                        for="orange"
+                      ></label>
+                      <input type="checkbox" id="yellow" name="yellow" /><label
+                        for="yellow"
+                      ></label>
+                      <input type="checkbox" id="green" name="green" /><label
+                        for="green"
+                      ></label>
+                      <input
+                        type="checkbox"
+                        id="turquoise"
+                        name="turquoise"
+                      /><label for="turquoise"></label>
+                      <input type="checkbox" id="blue" name="blue" /><label
+                        for="blue"
+                      ></label>
+                      <input
+                        type="checkbox"
+                        id="darkblue"
+                        name="darkblue"
+                      /><label for="darkblue"></label>
+                      <input type="checkbox" id="violet" name="violet" /><label
+                        for="violet"
+                      ></label>
+                      <input
+                        type="checkbox"
+                        id="darkviolet"
+                        name="darkviolet"
+                      /><label for="darkviolet"></label>
+                      <input
+                        type="checkbox"
+                        id="darkpink"
+                        name="darkpink"
+                      /><label for="darkpink"></label>
+                      <input type="checkbox" id="pink" name="pink" /><label
+                        for="pink"
+                      ></label>
+                    </div>
+                  </div>
+                  <div class="catalog-info__filtration_on_2">
+                    <p class="title">Тип комнаты</p>
+                    <div class="catalog-info__filtration_on_type">
+                      <input type="checkbox" id="kitchen" name="kitchen" />
+                      <label for="kitchen">Кухня и Столовая</label>
+                      <input type="checkbox" id="bathroom" name="bathroom" />
+                      <label for="bathroom">Ванная комната</label>
+                      <input
+                        type="checkbox"
+                        id="children-room"
+                        name="children-room"
+                      />
+                      <label for="children-room">Детская комната</label>
+                      <input
+                        type="checkbox"
+                        id="home-office"
+                        name="home-office"
+                      /><label for="home-office">Домашний офис</label>
+                      <input
+                        type="checkbox"
+                        id="living-room"
+                        name="living-room"
+                      /><label for="living-room">Гостиная</label>
+                      <input type="checkbox" id="hall" name="hall" /><label
+                        for="hall"
+                        >Прихожая</label
+                      ><input
+                        type="checkbox"
+                        id="bedroom"
+                        name="bedroom"
+                      /><label for="bedroom">Спальня</label>
+                      <input
+                        type="checkbox"
+                        id="wardrobe"
+                        name="wardrobe"
+                      /><label for="wardrobe">Гардероб</label>
+                      <input
+                        type="checkbox"
+                        id="cottage"
+                        name="cottage"
+                      /><label for="cottage">Дача</label>
+                      <input type="checkbox" id="light" name="light" /><label
+                        for="light"
+                        >Свет</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-info__filtration_on_submit">
+                  <button type="submit" class="title">Применить</button>
+                </div>
+              </section>
+            </form>
+          </section>
+          <section class="catalog-info__ordering">
+            <select class="catalog-info__ordering_selector">
+              <option>По популярности</option>
+              <option>По возрастанию</option>
+              <option>По убыванию</option>
+            </select>
+          </section>
+        </section>
+      </section>
+      <section class="product-box">
+        <section class="product-content">
+          <a href="#">
+            <img src="images/tatran.jpeg" alt="default" />
+          </a>
+          <h3 class="product-name">Кровать TATRAN</h3>
+          <p class="product-describe">
+            Основание из полированной нержавеющей стали, придает оригинальный
+            парящий эффект.
+          </p>
+          <p class="new-price">120 000 руб.</p>
+        </section>
+        <section class="product-content">
+          <a href="#">
+            <img src="images/vilora.jpeg" alt="default" />
+          </a>
+          <h3 class="product-name">Кресло VILORA</h3>
+          <p class="product-describe">
+            Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и
+            приятная на ощупь ткань
+          </p>
+          <p class="new-price">21 000 руб.</p>
+        </section>
+        <section class="product-content">
+          <a href="#">
+            <img src="images/menu.jpeg" alt="default" />
+          </a>
+          <h3 class="product-name">Стол MENU</h3>
+          <p class="product-describe">
+            Для того чтобы трапезничать было приятно, необходим правильный
+            обеденный стол.
+          </p>
+          <p class="new-price">34 000 руб.</p>
+        </section>
+        <section class="product-content">
+          <a href="#">
+            <img src="images/askesta.jpeg" alt="default" />
+          </a>
+          <h3 class="product-name">Кресло ASKESTA</h3>
+          <p class="product-describe">
+            Высокоэластичный пенополиуретан в «начинке» кресла надежен и
+            долговечен
+          </p>
+          <p class="new-price">68 000 руб.</p>
+        </section>
+        <section class="product-content">
+          <a href="#">
+            <img src="images/norman.jpeg" alt="default" />
+          </a>
+          <h3 class="product-name">Стол NORMAN</h3>
+          <p class="product-describe">
+            Прекрасно переносит солнечные лучи, перепады влажности и любые
+            осадки
+          </p>
+          <p class="new-price">40 000 руб.</p>
+        </section>
+        <section class="product-content">
+          <a href="#">
+            <img src="images/nastan.jpeg" alt="default" />
+          </a>
+          <h3 class="product-name">Диван NASTAN</h3>
+          <p class="product-describe">
+            Модель отличается простотой линий и форм, отсутствием броского
+            декора.
+          </p>
+          <p class="new-price">80 000 руб.</p>
+        </section>
+        <section class="product-content">
+          <a href="#">
+            <img src="images/tatran.jpeg" alt="default" />
+          </a>
+          <h3 class="product-name">Кровать TATRAN</h3>
+          <p class="product-describe">
+            Основание из полированной нержавеющей стали, придает оригинальный
+            парящий эффект.
+          </p>
+          <p class="new-price">120 000 руб.</p>
+        </section>
+        <section class="product-content">
+          <a href="#">
+            <img src="images/vilora.jpeg" alt="default" />
+          </a>
+          <h3 class="product-name">Кресло VILORA</h3>
+          <p class="product-describe">
+            Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и
+            приятная на ощупь ткань
+          </p>
+          <p class="new-price">21 000 руб.</p>
+        </section>
+        <section class="product-content">
+          <a href="#">
+            <img src="images/menu.jpeg" alt="default" />
+          </a>
+          <h3 class="product-name">Стол MENU</h3>
+          <p class="product-describe">
+            Для того чтобы трапезничать было приятно, необходим правильный
+            обеденный стол.
+          </p>
+          <p class="new-price">34 000 руб.</p>
+        </section>
+        <section class="product-content">
+          <a href="#">
+            <img src="images/askesta.jpeg" alt="default" />
+          </a>
+          <h3 class="product-name">Кресло ASKESTA</h3>
+          <p class="product-describe">
+            Высокоэластичный пенополиуретан в «начинке» кресла надежен и
+            долговечен
+          </p>
+          <p class="new-price">68 000 руб.</p>
+        </section>
+        <section class="product-content">
+          <a href="#">
+            <img src="images/norman.jpeg" alt="default" />
+          </a>
+          <h3 class="product-name">Стол NORMAN</h3>
+          <p class="product-describe">
+            Прекрасно переносит солнечные лучи, перепады влажности и любые
+            осадки
+          </p>
+          <p class="new-price">40 000 руб.</p>
+        </section>
+        <section class="product-content">
+          <a href="#">
+            <img src="images/nastan.jpeg" alt="default" />
+          </a>
+          <h3 class="product-name">Диван NASTAN</h3>
+          <p class="product-describe">
+            Модель отличается простотой линий и форм, отсутствием броского
+            декора.
+          </p>
+          <p class="new-price">80 000 руб.</p>
+        </section>
+      </section>
+      <a class="show-more" href="#">Показать ещё</a>
+    </section>
+    <footer class="center footer">
+      <section class="footer__logo">
+        <img src="./images/interior.svg" alt="Логотип" width="198" />
+      </section>
+      <section class="footer__content">
+        <section class="footer__info">
+          <section class="footer__item">
+            <h4 class="footer-menu">Меню</h4>
+            <section class="footer__link">
+              <a href="index.html">Главная</a>
+            </section>
+            <section class="footer__link">
+              <a href="catalog.html">Каталог</a>
+            </section>
+            <section class="footer__link">
+              <a href="basket.html">Корзина</a>
+            </section>
+          </section>
+          <section class="footer__item">
+            <h4 class="footer__contacts">Контакты</h4>
+            <section class="footer__link">
+              <a href="#">+7 908 800 80 80</a>
+            </section>
+            <section class="footer__link">
+              <a href="#">help@interier.com</a>
+            </section>
+            <section class="footer__icons">
+              <a href="https://vk.com/">
+                <img src="images/vk.svg" alt="Вконтакте" />
+              </a>
+              <a href="https://telegram.org//">
+                <img src="images/telegram.svg" alt="telegram" />
+              </a>
+              <a href="https://dzen.ru/">
+                <img src="images/dzen.svg" alt="dzen" />
+              </a>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section class="footer__form">
+        <form action="#">
+          <p class="news">Получайте наши новости и обновления</p>
+          <input class="input-email" type="email" placeholder="Ваш e-mail" />
+          <button class="btn-subscribe">Подписаться</button>
+        </form>
+      </section>
+    </footer>
+  </body>
+</html>
