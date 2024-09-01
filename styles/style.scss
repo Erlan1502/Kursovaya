@@ -21,6 +21,9 @@ $color-text: white;
 .menu {
   display: flex;
   gap: 32px;
+  &-mob {
+    display: none;
+  }
 }
 .menu > ul {
   display: flex;
@@ -36,9 +39,9 @@ $color-text: white;
   color: white;
 }
 .menu-link:hover,
-.footer__link:hover {
-  text-decoration: underline;
-}
+// .footer__link:hover {
+//   text-decoration: underline;
+// }
 .heading {
   color: $color-text;
   font-size: 64px;
@@ -46,7 +49,7 @@ $color-text: white;
   line-height: 70px;
   letter-spacing: 0%;
   text-align: left;
-  width: 792px;
+  max-width: 792px;
   margin-bottom: 16px;
 }
 .our-class {
@@ -110,10 +113,13 @@ $color-text: white;
   margin-bottom: 8px;
 }
 .product-describe {
+  color: rgb(136, 136, 136);
+  font-family: Montserrat;
   font-size: 14px;
+  font-weight: 400;
   line-height: 17px;
-  color: #888888;
-  margin-bottom: 12px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 .product-box {
   display: flex;
@@ -136,24 +142,6 @@ $color-text: white;
   line-height: 29px;
   text-decoration-line: line-through;
   color: #888888;
-}
-.footer__contacts {
-  color: rgb(0, 0, 0);
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 29px;
-  letter-spacing: 0%;
-  text-align: left;
-  margin-bottom: 12px;
-}
-.footer__link {
-  color: rgb(136, 136, 136);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 17px;
-  letter-spacing: 0%;
-  text-align: left;
-  margin-bottom: 12px;
 }
 .news {
   font-size: 14px;
@@ -210,7 +198,6 @@ $color-text: white;
   padding-left: 17px;
   padding-top: 12px;
   padding-bottom: 13px;
-  background-color: transparent;
   margin-bottom: 8px;
 }
 .form__input::placeholder {
@@ -228,19 +215,7 @@ $color-text: white;
   letter-spacing: 0%;
   text-align: left;
 }
-.footer__logo {
-  fill: black;
-}
-.footer__item a {
-  text-decoration: none;
-  color: rgb(136, 136, 136);
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 17px;
-  letter-spacing: 0%;
-  text-align: left;
-}
+
 .top {
   background: url(../images/top.jpeg), rgb(196, 196, 196);
   background-size: cover;
@@ -255,24 +230,60 @@ $color-text: white;
   text-align: left;
   margin-bottom: 12px;
 }
-footer {
+.footer {
   background: rgb(247, 246, 246);
   display: flex;
   gap: 212px;
   padding-top: 32px;
+  padding-bottom: 64px;
+  &__contacts {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 12px;
+  }
+  &__info {
+    display: flex;
+    gap: 129px;
+  }
+  &__content {
+    display: flex;
+    gap: 192px;
+  }
+  &__icons {
+    display: flex;
+    gap: 12px;
+  }
+  &__item a {
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  &__logo {
+    fill: black;
+  }
+  &__link:hover {
+    text-decoration: underline;
+  }
+  &__link {
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 12px;
+  }
 }
-.footer__info {
-  display: flex;
-  gap: 129px;
-}
-.footer__content {
-  display: flex;
-  gap: 192px;
-}
-.footer__icons {
-  display: flex;
-  gap: 12px;
-}
+
 .news {
   color: rgb(0, 0, 0);
   font-family: Montserrat;
@@ -284,44 +295,48 @@ footer {
   margin-bottom: 8px;
 }
 
-.for__item {
-  height: 415px;
+.for {
+  &__item {
+    height: 415px;
+    font-family: Montserrat;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: $color-text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_1 {
+      background-image: url(../images/for-chill.jpeg);
+    }
+    &_2 {
+      background-image: url(../images/for-work.jpeg);
+    }
+    &_3 {
+      background-image: url(../images/for-kitchen.jpeg);
+    }
+    &_4 {
+      background-image: url(../images/for-lullaby.jpeg);
+    }
+    &_5 {
+      background-image: url(../images/for-bathroom.jpeg);
+    }
+    &_small {
+      grid-column: span 4;
+    }
+    &_big {
+      grid-column: span 6;
+    }
+  }
+  &__content {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
 
-  font-family: Montserrat;
-  font-size: 34px;
-  font-weight: 600;
-  line-height: 41px;
-  letter-spacing: 0%;
-  color: $color-text;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.for__content {
-  display: grid;
-  gap: 32px;
-  grid-template-columns: repeat(12, 1fr);
-}
-.for__item_big {
-  grid-column: span 6;
-}
-.for__item_small {
-  grid-column: span 4;
-}
-.for__item_1 {
-  background-image: url(../images/for-chill.jpeg);
-}
-.for__item_2 {
-  background-image: url(../images/for-work.jpeg);
-}
-.for__item_3 {
-  background-image: url(../images/for-kitchen.jpeg);
-}
-.for__item_4 {
-  background-image: url(../images/for-lullaby.jpeg);
-}
-.for__item_5 {
-  background-image: url(../images/for-bathroom.jpeg);
-}
 @import "catalog";
 @import "basket";
+@import "tablet";
+@import "mobile";

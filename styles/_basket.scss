@@ -86,6 +86,13 @@ $gap: 32px;
       margin-top: 42px;
       font-size: 20px;
       font-weight: 700;
+      color: rgb(0, 0, 0);
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0px;
+      text-align: center;
     }
     &-data {
       padding: 0;
@@ -127,8 +134,8 @@ $gap: 32px;
     }
     &-ordering {
       button {
-        padding-left: 76px;
-        padding-right: 76px;
+        width: 290px;
+        height: 41px;
         box-sizing: border-box;
         border: 1px solid rgb(4, 4, 4);
         border-radius: 20px;
@@ -169,6 +176,15 @@ $gap: 32px;
     display: flex;
     gap: 16px;
     flex-direction: column;
+    h4 {
+      color: rgb(0, 0, 0);
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: 500 !important;
+      line-height: 29px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
     &-description {
       font-size: 14px;
       font-weight: 400;
@@ -176,8 +192,11 @@ $gap: 32px;
     }
     &-price {
       color: rgb(5, 5, 5);
+      font-family: Montserrat;
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0%;
     }
     h4 {
       font-size: 24px;
@@ -229,14 +248,22 @@ $gap: 32px;
   }
   &__item-number {
     input {
+      box-sizing: border-box;
       padding-left: 13px;
       padding-top: 11px;
       padding-bottom: 13px;
       padding-right: 24px;
-      width: 32px;
-      height: 25px;
       border-radius: 6px;
       background: rgb(247, 246, 246);
+      color: rgb(0, 0, 0);
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 210%;
+      letter-spacing: 0px;
+      text-align: center;
+      width: 71px;
+      height: 51px;
     }
   }
 }
