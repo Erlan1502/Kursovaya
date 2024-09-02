@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -938,12 +939,12 @@ button[type=submit] {
   text-decoration-line: underline;
 }
 .basket__item-number input {
+  border: none;
   box-sizing: border-box;
   padding-left: 13px;
   padding-top: 11px;
   padding-bottom: 13px;
   padding-right: 24px;
-  border-radius: 6px;
   background: rgb(247, 246, 246);
   color: rgb(0, 0, 0);
   font-family: Poppins;
@@ -1008,7 +1009,7 @@ button[type=submit] {
   }
   .header {
     margin: 0;
-    padding-top: 32px;
+    height: 57px;
   }
   .form__input {
     display: none;
@@ -1022,7 +1023,8 @@ button[type=submit] {
     gap: 32px;
   }
   .logo {
-    font-size: 24px;
+    font-size: 18px;
+    text-align: center;
   }
   .heading {
     font-size: 48px;
@@ -1030,6 +1032,12 @@ button[type=submit] {
     line-height: 59px;
     letter-spacing: 0%;
     text-align: center;
+    margin-top: 82px;
+  }
+  .heading-basket {
+    font-size: 48px;
+    text-align: center;
+    margin-top: 82px;
   }
   .our-class {
     font-size: 16px;
@@ -1058,6 +1066,9 @@ button[type=submit] {
     letter-spacing: 0%;
     text-align: left;
   }
+  .product-content img {
+    width: 100%;
+  }
   .for__content {
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
@@ -1085,6 +1096,9 @@ button[type=submit] {
     flex-wrap: wrap;
     gap: 64px;
     justify-content: center;
+  }
+  .footer__info {
+    gap: 100px;
   }
   .footer__form {
     width: 260px;
@@ -1154,15 +1168,29 @@ button[type=submit] {
     gap: 16px;
     margin-top: 64px;
   }
+  .basket__name-box {
+    display: none;
+  }
   .basket__item img {
     display: none;
+  }
+  .basket__form {
+    border-radius: 20px;
+    background: rgb(247, 246, 246);
+    height: 556px;
+    grid-column: span 8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .basket__form-data {
+    padding: 0;
+    margin-top: 35px;
+    width: calc(100% - 55px);
   }
   .basket__form-data input {
     width: 144px;
     border: none;
     background-color: rgb(247, 246, 246);
-  }
-  .basket__form-ordering button {
-    width: 145px;
   }
 }/*# sourceMappingURL=style.css.map */

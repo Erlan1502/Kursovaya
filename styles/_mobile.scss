@@ -5,7 +5,7 @@
   }
   .header {
     margin: 0;
-    padding-top: 32px;
+    height: 57px;
   }
   .form__input {
     display: none;
@@ -19,7 +19,8 @@
     }
   }
   .logo {
-    font-size: 24px;
+    font-size: 18px;
+    text-align: center;
   }
   .heading {
     font-size: 48px;
@@ -27,6 +28,12 @@
     line-height: 59px;
     letter-spacing: 0%;
     text-align: center;
+    margin-top: 82px;
+    &-basket {
+      font-size: 48px;
+      text-align: center;
+      margin-top: 82px;
+    }
   }
   .our-class {
     font-size: 16px;
@@ -55,6 +62,9 @@
     letter-spacing: 0%;
     text-align: left;
   }
+  .product-content img {
+    width: 100%;
+  }
   .for__content {
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
@@ -82,6 +92,9 @@
     flex-wrap: wrap;
     gap: 64px;
     justify-content: center;
+    &__info {
+      gap: 100px;
+    }
   }
   .footer__form {
     width: 260px;
@@ -151,16 +164,30 @@
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
     gap: 16px;
     margin-top: 64px;
+    &__name-box {
+      display: none;
+    }
     &__item img {
       display: none;
+    }
+    &__form {
+      border-radius: 20px;
+      background: rgb(247, 246, 246);
+      height: 556px;
+      grid-column: span 8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__form-data {
+      padding: 0;
+      margin-top: 35px;
+      width: calc(100% - 55px);
     }
     &__form-data input {
       width: 144px;
       border: none;
       background-color: rgb(247, 246, 246);
-    }
-    &__form-ordering button {
-      width: 145px;
     }
 
     // img {
