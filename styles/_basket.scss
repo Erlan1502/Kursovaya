@@ -108,6 +108,9 @@ $gap: 32px;
         margin-top: 44px;
         border-bottom: 1px solid rgb(202, 205, 216);
       }
+      &-number > input {
+        border: none;
+      }
       input {
         width: 288px;
         border: none;
